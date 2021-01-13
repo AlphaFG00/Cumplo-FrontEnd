@@ -61,11 +61,11 @@
   </div>
 </template>
 <script>
-import axios from 'axios';
 import bulmaCalendar from 'bulma-calendar';
 import moment from 'moment';
 // eslint-disable-next-line import/extensions
 import LineChart from '@/components/LineChart.js';
+import axios from '@/axios';
 
 export default {
   components: {
@@ -103,7 +103,7 @@ export default {
         end_date: this.end_date,
         currency: this.currency,
       };
-      axios.post('http://127.0.0.1:8000/currencies/', request_data).then((response) => {
+      axios.post('currencies/', request_data).then((response) => {
         this.datos = response.data;
         // eslint-disable-next-line no-array-constructor
         const labels = new Array();
