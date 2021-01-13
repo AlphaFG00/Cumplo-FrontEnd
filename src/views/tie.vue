@@ -195,6 +195,9 @@ export default {
           this.fillData_2(T2_labels, T2_data);
           this.fillData_3(T3_labels, T3_data);
           this.fillData_4(T4_labels, T4_data);
+        })
+        .catch((err) => {
+            alert(err);
         });
       },
       // eslint-disable-next-line no-unused-vars

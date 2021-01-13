@@ -115,6 +115,9 @@ export default {
             data.push(a.dato);
           });
           this.fillData(labels, data);
+        })
+        .catch((err) => {
+            alert(err);
         });
       },
       // eslint-disable-next-line no-unused-vars
