@@ -196,9 +196,9 @@ export default {
           this.fillData_3(T3_labels, T3_data);
           this.fillData_4(T4_labels, T4_data);
         })
-        .catch((err) => {
-            alert(err);
-        });
+          .catch((err) => {
+            alert(JSON.stringify(err.response.data));
+          });
       },
       // eslint-disable-next-line no-unused-vars
       filteringDates(value) {

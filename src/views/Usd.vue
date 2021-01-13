@@ -115,9 +115,9 @@ export default {
         });
         this.fillData(labels, data);
       })
-      .catch((err) => {
-          alert(err);
-      });
+        .catch((err) => {
+          alert(JSON.stringify(err.response.data));
+        });
     },
     // eslint-disable-next-line no-unused-vars
     filteringDates(value) {
